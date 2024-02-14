@@ -1,5 +1,6 @@
 main.py contient une API permettant de créer des questionnaires à partir d'une liste de questions.
-Pour accéder à cette fonctionnalité, il faut s'authentifier avec un en-tête de la forme Authorization: Basic username:password
+Pour lancer L'API, entrer dans le terminal : uvicorn --reload main:api
+Pour accéder à ses fonctionnalités, il faut s'authentifier avec un en-tête de la forme Authorization: Basic username:password
 (les comptes déjà créés sont alice:wonderland, bob:builder, clementine:mandarine)
 
 Les administrateurs peuvent aussi ajouter des questions à la liste dejà existante (en se connectant avec admin:4dm1n)
