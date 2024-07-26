@@ -8,23 +8,23 @@ Cette application a été créée dans le cadre d'une formation avec Datasciente
 
 Pour lancer l'API, entrez dans le terminal :
 ```bash
-uvicorn --reload --port PORT main:api
+uvicorn --reload --port {PORT} main:api
 ```
 où PORT est le numéro de port exposé (8000 par défaut).
 
 ## Authentification
-Pour accéder aux fonctionnalités, il faut s'authentifier lors de la requête avec un en-tête de la forme `Authorization: Basic username:password.`
+Pour accéder aux fonctionnalités, il faut s'authentifier lors de la requête avec un en-tête de la forme `Authorization: Basic username:password`.
 
 Les utilisateurs déjà renseignés sont :
 - `alice:wonderland`
 - `bob:builder`
 - `clementine:mandarine`
 
-Les administrateurs peuvent ajouter des questions à la liste déjà existante en se connectant avec `admin:4dm1n.`
+Les administrateurs peuvent ajouter des questions à la liste déjà existante en se connectant avec `admin:4dm1n`.
 
 ## Endpoints
 L'API pour la création de questionnaires est accessible à l'adresse :
-- `http://127.0.0.1:8000` ou `http://127.0.0.1:PORT` (si vous avez précisé un port différent).
+- `http://127.0.0.1:8000` ou `http://127.0.0.1:{PORT}` (si vous avez précisé un port différent).
 
 ## /create-questionnaire (GET)
 ### Description
